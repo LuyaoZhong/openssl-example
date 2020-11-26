@@ -7,5 +7,5 @@ clean:
 	rm *.o $(PROGRAMS) -f
 
 .cc:
-	g++ -Wall -g $< -o $@  -lssl -lcrypto
+	g++ -Wall -g $< -o $@  -lssl -lcrypto -fpermissive -lhiredis
 
